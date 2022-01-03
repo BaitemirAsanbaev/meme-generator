@@ -10,9 +10,18 @@ body{
 nav ul li a{
   color: #fff;
   text-decoration: none;
+  transition: color .5s;
 }
+nav ul li a:hover{
+  color: #b5ff93;
+}
+nav ul li:hover{
+  color: #b5ff93;
+}
+
 nav ul li{
   padding: 10px 30px;
+  transition: color .5s;
 
 }
 nav ul{
@@ -31,6 +40,60 @@ nav{
 
 
 
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.troll{
+  transform: scale(-1, 1);
+  position: absolute;
+  z-index: 1;
+  left: 200px;
+}
+.start_btn{
+  padding: 20px 70px;
+  font-size: 34px;
+  background-color: #00112b;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: color .5s, box-shadow .5s, transform .5s;
+}
+.start_btn:hover{
+  color: #b5ff93;
+  box-shadow: 10px 10px 0px 5px #b5ff93;
+  transform: translate(-10px, -10px);
+}
+.modal{
+  position: absolute;
+  top: -100%;
+  z-index: 3;
+  transition: top 1s ease-out;
+  color: #fff;
+}
+.modal nav ul{
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 300px;
+}
+.modal nav ul li{
+  font-size: 24px;
+  cursor: pointer;
+}
+.backdrop{
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.699);
+}
+
+
 footer{
   display: flex;
   justify-content: center;
@@ -45,6 +108,6 @@ footer{
   font-size: 28px;
 }
 footer a{
-  color: rgb(217, 249, 255);
+  color: #b5ff93;
   font-weight: bold;
 }

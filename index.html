@@ -19,6 +19,19 @@
     </nav>
   </header>
   <main>
+    <img class="troll" src="./images/troll.png" alt="meme">
+    <div class="start_btn" id="start_btn">Start</div>
+    <div class="modal" id="modal">
+      <nav>
+        <ul>
+          <li><a href="./by-image.html">By image</a></li>
+          <li><a href="./by-phrase.html">By phrase</a></li>
+          <li><a href="./custom.html">Custom</a></li>
+          <li onclick={goBack()}>Back</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="backdrop" id="backdrop"></div>
 
   </main>
   <footer>
@@ -26,6 +39,6 @@
   </footer>
 
 
-  <script src="./script.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
